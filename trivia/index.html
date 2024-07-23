@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <script src="trivia.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3 id="question1" >What is the opposite of matter?</h3>
+                <h3 id= "newtext"></h3>
+                <form>
+                    <button class="correct">Antimatter</button>
+                    <button class="incorrect">Neutrino Bomb</button>
+                    <button class="incorrect">Concentrated Dark Matter</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3 id="question">In what type of matter are atoms most tightly packed?</h3>
+                <h3 id= "newtext2"></h3>
+                <form onsubmit= "changecolor(); return false;">
+                    <input autocomplete= "off" placeholder= "Answer" id = "ipfield" type= "text">
+                    <input type= "submit" id = "submitbutton">
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
